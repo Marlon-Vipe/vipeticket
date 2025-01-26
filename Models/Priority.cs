@@ -5,7 +5,7 @@ namespace Vipe_Tickets.Models;
 
 public partial class Priority
 {
-    public int IdPriority { get; set; }
+    public int PriorityId { get; set; }
 
-    public string Description { get; set; } = null!;
+    public string PriorityName { get; set; } = null!;
 }

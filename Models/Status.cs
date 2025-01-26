@@ -5,7 +5,7 @@ namespace Vipe_Tickets.Models;
 
 public partial class Status
 {
-    public int IdStatus { get; set; }
+    public int StatusId { get; set; }
 
-    public string Description { get; set; } = null!;
+    public string StatusName { get; set; } = null!;
 }
