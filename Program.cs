@@ -1,4 +1,11 @@
+using Microsoft.EntityFrameworkCore;
+using Vipe_Tickets.Models;
+
 var builder = WebApplication.CreateBuilder(args);
+
+// Agrega el DbContext con la cadena de conexión
+builder.Services.AddDbContext<VipeTicketsContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
